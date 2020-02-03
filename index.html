@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Slider</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <ul class="header-navigation">
+                <li class="header-navigation-item"><a href="#" id="link1" class="active">Rostov-on-Don, Admiral</a></li>
+                <li class="header-navigation-item"><a href="#" id="link2" class="inactive">Sochi Thieves</a></li>
+                <li class="header-navigation-item"><a href="#" id="link3" class="inactive">Rostov-on-Don Patriotic</a></li>
+            </ul>
+            <div class="content">
+                <div class="img-container">
+                    <ul id="slides">
+                        <li class="slide showing"></li>
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                    </ul>
+                </div>
+
+                <div class="wrapper">
+                    <h2>Completed projects</h2>
+                    <div class="line1"></div>
+                    <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction<br>market we have made happy more than 1000 families.</p>
+                    <div id="grid">
+                        <div class="fl1"><div class="grid-block">
+                            <h3>CITY:</h3>
+                            <p>Rostov-on-Don<br>LCD admiral</p>
+                        </div>
+                        <div class="grid-block">
+                            <h3>REPAIR TIME:</h3>
+                            <p>3.5 months</p>
+                        </div>
+                        </div>
+                        <div class="fl2"><div class="grid-block">
+                            <h3>APARTMENT AREA:</h3>
+                            <p>81 m2</p><br>
+                        </div>
+                        <div class="grid-block">
+                            <h3>REPAIR COST:</h3>
+                            <p>Upon request</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="buttons">
+                        <div class="arrow">
+                            <div class="vector"></div>
+                            <div class="vector-line"></div>
+                        </div>
+                        <button class="controls" id="previous"></button>
+                        <form id="myDiv">
+                        <input type="radio" class="radio" name="radbut" id="point1" checked>
+                        <input type="radio" class="radio" name="radbut" id="point2">
+                        <input type="radio" class="radio" name="radbut" id="point3">
+                        </form>
+                        <button class="controls" id="next"></button>
+                        <div class="arrow arrow2">
+                        <div class="vector-line"></div>
+                        <div class="vector"></div>
+                        </div>
+                         <div class="control">
+                        <label for="point1"></label>
+                        <label for="point2"></label>
+                        <label for="point3"></label>
+                       </div>
+                    </div>
+                   
+                    </div>
+                         
+                </div>
+
+                               
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <script src="index.js"></script>
+
+</body>
+</html>
