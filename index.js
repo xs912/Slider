@@ -11,6 +11,39 @@ let radArray = document.querySelectorAll(".radio");
 let next = document.getElementById("next");
 let previous = document.getElementById("previous");
 
+const entities = [
+  {
+    city: "Rostov-on-Don",
+    center: "LCD admiral",
+    time: "3.5 months",
+    area: "81 m2"
+  },
+  {
+    city: "Sochi",
+    center: "Thieves",
+    time: "4 months",
+    area: "105 m2"
+  },
+  {
+    city: "Rostov-on-Don",
+    center: "Patriotic",
+    time: "3 months",
+    area: "93 m2"
+  }
+];
+
+const city = document.querySelector(".city");
+const time = document.querySelector(".time");
+const center = document.querySelector(".center");
+const area = document.querySelector(".area");
+
+const setEntity = index => {
+  city.innerText = entities[index].city;
+  center.innerText = entities[index].center;
+  time.innerText = entities[index].time;
+  area.innerText = entities[index].area;
+};
+
 next.onclick = function() {
   nextSlide();
 };
@@ -47,6 +80,7 @@ function goToSlide(n) {
   slides[currentSlide].className = "slide";
   currentSlide = (n + slides.length) % slides.length;
   slides[currentSlide].className = "slide showing";
+  setEntity(currentSlide);
 }
 
 for (let i = 0; i < radArray.length; i++) {

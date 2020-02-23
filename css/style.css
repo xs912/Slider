@@ -51,6 +51,7 @@ p {
   margin-top: 9px;
   width: 442px;
 }
+
 .container {
   height: 783px;
   width: 1440px;
@@ -71,28 +72,28 @@ p {
   margin-left: 495px;
   margin-top: 52px;
 }
-#grid{
+#grid {
   display: flex;
   flex-direction: row;
   text-align: left;
   margin-top: 42px;
 }
-#grid h3{
+#grid h3 {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
 }
-#grid p{
+#grid p {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 21px;
-  color: #FFFFFF;  
+  color: #ffffff;
 }
 .fl1 {
   width: 161px;
@@ -102,29 +103,28 @@ p {
 }
 .fl2 {
   width: 213px;
-  padding-right: 89px;;
+  padding-right: 89px;
 }
-.buttons{
+.buttons {
   width: 252px;
   position: relative;
   margin-top: 0px;
   display: flex;
   flex-direction: row;
 }
-input{
+input {
   margin-top: 20px;
 }
 .arrow {
   position: relative;
   display: flex;
   align-items: center;
- 
 }
-.arrow2{
+.arrow2 {
   margin-left: 0px;
   transform: rotate(180deg);
 }
-.buttons .vector{
+.buttons .vector {
   position: absolute;
   border-right: solid 2px white;
   border-bottom: solid 2px white;
@@ -132,20 +132,20 @@ input{
   height: 8px;
   transform: rotate(-225deg);
 }
-.vector-line{
+.vector-line {
   position: absolute;
   background-color: white;
   height: 2px;
   width: 40px;
 }
-#slides{
+#slides {
   position: relative;
   height: 300px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
 }
-.slide{
+.slide {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -158,19 +158,19 @@ input{
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-.line1{
+.line1 {
   width: 92px;
   height: 1px;
-  background-color: #E3B873;
+  background-color: #e3b873;
   position: absolute;
   top: 228px;
   left: 295px;
 }
-.showing{
+.showing {
   opacity: 1;
   z-index: 2;
 }
-.controls{
+.controls {
   opacity: 0;
 }
 .controls:hover {
@@ -178,25 +178,25 @@ input{
 }
 a:link {
   text-decoration: none;
-  color: #E3B873;
+  color: #e3b873;
 }
 a:hover {
   cursor: pointer;
-  color: #E3B873;
+  color: #e3b873;
 }
 a:active {
   text-decoration: underline;
-  color: #E3B873;
+  color: #e3b873;
 }
 a:visited {
   text-decoration: underline;
-  color: #E3B873;
+  color: #e3b873;
 }
 a:focus {
   text-decoration: underline;
-  color: #E3B873;
+  color: #e3b873;
 }
-.slide{
+.slide {
   font-size: 40px;
   background: #333;
   color: #fff;
@@ -204,16 +204,16 @@ a:focus {
   width: 679px;
   background-size: cover;
 }
-.slide:nth-of-type(1){
-   background-image: url("../images/image 2.1.jpg");
+.slide:nth-of-type(1) {
+  background-image: url("../images/image 2.1.jpg");
 }
-.slide:nth-of-type(2){
+.slide:nth-of-type(2) {
   background-image: url("../images/image 2.2.jpg");
 }
-.slide:nth-of-type(3){
+.slide:nth-of-type(3) {
   background-image: url("../images/image 2.3.jpg");
 }
-.controls{
+.controls {
   background: black;
   color: #fff;
   border: none;
@@ -224,11 +224,11 @@ a:focus {
   width: 70px;
 }
 .controls:hover,
-.controls:focus{
+.controls:focus {
   background: #eee;
   color: #333;
 }
-input:hover{
+input:hover {
   cursor: pointer;
 }
 .header-navigation-item .active {
@@ -238,7 +238,7 @@ input:hover{
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
   text-decoration: underline;
 }
 .header-navigation-item .inactive {
@@ -249,9 +249,9 @@ input:hover{
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
-  }
- 
-.radio{
+}
+
+.radio {
   opacity: 0.3;
   width: 12px;
   height: 12px;
@@ -264,8 +264,5 @@ input:hover{
   width: 12px;
   height: 12px;
   border-radius: 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
-
-
