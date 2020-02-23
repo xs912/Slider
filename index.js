@@ -71,7 +71,7 @@ function previousSlide() {
   } else {
     m = currentSlide - 1;
   }
-  goToSlide(currentSlide - 1);
+  goToSlide(m);
   radArray[m].checked = true;
   links[m].className = "active";
   links[m + 1].className = "inactive";
@@ -101,6 +101,7 @@ for (let i = 0; i < radArray.length; i++) {
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function(event) {
+    radArray[i].checked = true;
     goToSlide(i);
     links[i].className = "active";
     if (i == 0) {
@@ -112,6 +113,5 @@ for (let i = 0; i < links.length; i++) {
       links[i - 2].className = "inactive";
     }
     links[i + 1].className = "inactive";
-    myform.radArray[i].checked = true;
   });
 }
