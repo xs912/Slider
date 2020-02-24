@@ -231,6 +231,16 @@ a:focus {
 input:hover {
   cursor: pointer;
 }
+
+.header-navigation-item a{
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
 .header-navigation-item .active {
   font-family: Yeseva One;
   font-style: normal;
@@ -241,16 +251,6 @@ input:hover {
   color: #e3b873;
   text-decoration: underline;
 }
-.header-navigation-item .inactive {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .radio {
   opacity: 0.3;
   width: 12px;

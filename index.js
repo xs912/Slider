@@ -86,16 +86,16 @@ function goToSlide(n) {
 for (let i = 0; i < radArray.length; i++) {
   radArray[i].addEventListener("click", function(event) {
     goToSlide(i);
-    links[i].className = "active";
+    links[i].classList.add("active");
     if (i == 0) {
-      links[i + 2].className = "inactive";
+      links[i + 2].classList.remove("active");
     } else {
-      links[i - 1].className = "inactive";
+      links[i - 1].classList.remove("active");
     }
     if (i == 2) {
-      links[i - 2].className = "inactive";
+      links[i - 2].classList.remove("active");
     }
-    links[i + 1].className = "inactive";
+    links[i + 1].classList.remove("active");
   });
 }
 
@@ -103,15 +103,15 @@ for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function(event) {
     radArray[i].checked = true;
     goToSlide(i);
-    links[i].className = "active";
+    links[i].classList.add("active");
     if (i == 0) {
-      links[i + 2].className = "inactive";
+      links[i + 2].classList.remove("active");
     } else {
-      links[i - 1].className = "inactive";
+      links[i - 1].classList.remove("active");
     }
     if (i == 2) {
-      links[i - 2].className = "inactive";
+      links[i - 2].classList.remove("active");
     }
-    links[i + 1].className = "inactive";
+    links[i + 1].classList.remove("active");
   });
 }
